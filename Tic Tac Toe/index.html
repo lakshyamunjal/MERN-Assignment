@@ -5,35 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <style>
         button {
             padding-right: 20px;
             width: 50px;
+            margin-bottom: 10px;
         }
     </style>
     <script src="scripts/logic.js"></script>
 </head>
 
 <body>
-    <div style="text-align: center;">
+    <div class='container' style="text-align: center;">
         <p id="turn"></p>
-        <button id='b1' value='1'>-</button>
-        <button id='b2' value='2'>-</button>
-        <button id='b3' value='3'>-</button>
+        <button id='b1' class='btn btn-info' value='1'>-</button>
+        <button id='b2' class='btn btn-info' value='2'>-</button>
+        <button id='b3' class='btn btn-info' value='3'>-</button>
         <br />
 
-        <button id='b4' value='4'>-</button>
-        <button id='b5' value='5'>-</button>
-        <button id='b6' value='6'>-</button>
+        <button id='b4' class='btn btn-info' value='4'>-</button>
+        <button id='b5' class='btn btn-info' value='5'>-</button>
+        <button id='b6' class='btn btn-info' value='6'>-</button>
 
         <br />
-        <button id='b7' value='7'>-</button>
-        <button id='b8' value='8'>-</button>
-        <button id='b9' value='9'>-</button>
+        <button id='b7' class='btn btn-info' value='7'>-</button>
+        <button id='b8' class='btn btn-info' value='8'>-</button>
+        <button id='b9' class='btn btn-info' value='9'>-</button>
         <br/>
         <p id="result"></p>
         <br/>
-        <button id = 'playAgain' style="width: 160px;" hidden>Play Again</button>
+        <button type='button' id = 'playAgain' class='btn btn-primary btn-lg' style="width: 160px;">Play Again</button>
     </div>
+
 </body>
 </html>
