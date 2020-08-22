@@ -20,6 +20,7 @@ function bindEvents() {
     document.querySelector('#playAgain').addEventListener('click', function(){
         location.reload();
     });
+    
 
     for (var i = 1; i < 10; i++)
         clicked[i] = false;
@@ -104,9 +105,13 @@ function buttonClick() {
         clicked[this.value] = true;
 
         if (start % 2 == 0) {
+            console.log('trying to change button color for O');
             document.getElementById(id).innerText = 'O';
+            document.getElementById(id).className='btn btn-success';
             checkForWin('O');
         } else {
+            console.log('trying to change button color for X');
+            document.getElementById(id).className='btn btn-warning';
             document.getElementById(id).innerText = 'X';
             checkForWin('X');
         }
